@@ -1,0 +1,7 @@
+name: BetterTools
+version: '1.0-SNAPSHOT'
+main: fr.yohem.bettertools.BetterTools
+commands:
+  customenchant:
+    description: voici la desc
+    permission: op
