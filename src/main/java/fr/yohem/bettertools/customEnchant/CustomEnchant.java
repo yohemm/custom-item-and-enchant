@@ -6,7 +6,6 @@ import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
-import java.beans.EventHandler;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,7 +14,10 @@ public class CustomEnchant{
     private LevelCustomEnchant level;
 
     public enum Enchant{
-        BIGBUGER("bigburger", 3);
+        AUTO_REPLANTISH("Auto-replantish", 1),
+        BIGBUGER("Auto-recup", 3),
+        FURNACE("chaleur infernal", 3),
+        CAMPAGNARD("esprit campagnard", 3);
         CustomEnchant customEnchant;
 
         public CustomEnchant getEnchant(){
@@ -27,6 +29,8 @@ public class CustomEnchant{
         }
     }
     public CustomEnchant(String name, int level) {
+        System.out.println("name :"+name);
+        name = Character.toString(name.charAt(0)).toUpperCase()+name.replaceFirst(name.charAt(0)+"", "") ;
         this.name = name;
         this.level = new LevelCustomEnchant(level);
     }

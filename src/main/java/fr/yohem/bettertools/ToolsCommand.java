@@ -23,11 +23,13 @@ public class ToolsCommand implements CommandExecutor {
                 level = 0;
             String[] wordInEnch = new String[args.length-1];
             System.arraycopy(args, 0, wordInEnch, 0,args.length-1);
+            System.out.println(wordInEnch);
             String enchantName = String.join(" ", wordInEnch);
             if (sender instanceof Player){
                 Player player = ((Player) sender);
                 ItemStack inHand =player.getInventory().getItemInMainHand();
                 if (!inHand.getType().equals(Material.AIR)){
+                    System.out.println(enchantName);
                     new CustomEnchant(enchantName, level).setEnchant(inHand);
                 }
             }else
