@@ -2,6 +2,12 @@
 # Custom Item And Enchant
 
 <!-- ![Project Banner](path/to/banner/image)  -->
+## 🌟 Project Status
+
+> **Current Status**: **:orange_circle: Paused**  
+> Development is temporarily on hold, but the project may resume in the future. Current features remain as-is.
+
+---
 
 ## Overview
 
